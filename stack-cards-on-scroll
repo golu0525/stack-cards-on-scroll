@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services </title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600|Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://clevertize.com/assets/css/optimized.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<style>
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+h1, h2, h3 {
+        font-family: Staatliches, cursive;
+}
+p, a, span {
+    font-family: Raleway, sans-serif;
+}
+.main_nav .dropdown a, .main_nav .dropdown.show .dropdown-menu .nav-item .nav-link {
+    color: #fff!important;
+}
+@media screen and (min-width: 767px) {
+    /* .bigBox.mobile-dev-service {
+    display: none;
+} */
+}
+    .bigBox {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    background: red;
+}
+
+.h1-title-card {
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+    
+    :root {
+        --cards: 6;
+        --cardHeight: 80vh;
+        --cardTopPadding: 3.5em;
+        --cardMargin: 4vw;
+    }
+    
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    #cards {
+        list-style: none;
+        padding-left: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(var(--cards), var(--cardHeight));
+        gap: var(--cardMargin);
+        padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+        margin-bottom: var(--cardMargin);
+    }
+    
+    #card1 {
+        --index: 1;
+    }
+    #card2 {
+        --index: 2;
+    }
+    #card3 {
+        --index: 3;
+    }
+    #card4 {
+        --index: 4;
+    }
+    #card5 {
+        --index: 5;
+    }
+    #card6 {
+        --index: 6;
+    }
+    
+    .card {
+        position: sticky;
+        top: 0;
+        padding-top: calc(var(--index) * var(--cardTopPadding));
+    }
+    
+    #card1 .card-body {
+        background-color: #52B2CF;
+        
+    }
+    #card2 .card-body {
+        /* background-color: #7EC4CF; */
+        background-color: #E5A36F;
+    }
+    #card3 .card-body {
+        background-color: #9CADCE;
+    }
+    #card4 .card-body {
+        background-color: #D4AFB9;
+    }
+    #card5 .card-body {
+        background-color: #52B2CF;
+    }
+    #card6 .card-body {
+        /* background-color: #7EC4CF; */
+        background-color: #E5A36F;
+    }
+    
+    .card-body {
+        box-sizing: border-box;
+        padding: 0 30px 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        height: var(--cardHeight);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: all 0.5s;
+        flex-direction: column;
+        height: 80vh;
+        background-image: url('https://clevertize.com/assets/images/serv-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .active-list {
+        padding: 0 0 0 10px;
+        border-left: 3px solid #c32340;
+        margin-top: 1rem;
+        border-inline-start-width: thick; 
+        writing-mode: horizontal-tb;
+        }
+    .active-list li {
+        text-align: left;
+        padding: 0 5px 10px 0;
+        font-size: 16px;
+        font-family: Raleway, sans-serif;
+    }
+    li.actual-service:last-child {
+        padding-bottom: 0;
+    }
+    
+    h3 {
+        font-size: 1.6rem;
+        margin-top: 10px;
+        color: #c32340;
+        font-weight: 400;
+        text-align: left !important;
+        font-size: 28px;
+    }
+    /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+    @media screen and (max-width: 767px) {
+        .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    #card1 .card-body {
+    background-image: url('https://clevertize.com/assets/images/brand-launch-services.jpg');
+    }
+    #card2 .card-body {
+        background-image: url('https://clevertize.com/assets/images/sociail-media-creative-service.jpg');
+    }
+    #card3 .card-body {
+        background-image: url('https://clevertize.com/assets/images/strategy-of-media.jpg');
+    }
+    #card4 .card-body {
+        background-image: url('https://clevertize.com/assets/images/website-seo-automation.jpg');
+    }
+    #card5 .card-body {
+        background-image: url('https://clevertize.com/assets/images/infographics-videos-services.jpg');
+    }
+    #card6 .card-body {
+        background-image: url('https://clevertize.com/assets/images/clevertize-consulting-services.jpg');
+    }
+    }
+    </style>
+
+</head>
+
+<!-- partial:index.partial.html -->
+
+	<body id="top">
+	    <main>
+      <div class="cursor" style="left: 1352px; top: 185px;"></div>
+    </main>
+    <header>
+      <div class="header-section">
+        <a href="./"><img src="https://clevertize.com/assets/images/logo.png" alt="Clevertize Logo" /></a>
+        <div id="menu" class="menu">
+          <a href="javascript:void(0)" aria-label="Menu" onclick="slideMenu()"  class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+        <nav class="main_nav">
+          <i class="closebtn" onclick="closeNav()">&times;</i>
+          <ul>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="nav-link"
+                data-toggle="dropdown"
+                aria-expanded="false"
+                ><span class="nav-link-inner-text">01</span></a
+              >
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a href="https://clevertize.com/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://clevertize.com/work/" class="nav-link">Our Work</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./#our_client" class="nav-link">Our Clients</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown show">
+              <a
+                href="#"
+                class="nav-link"
+                data-toggle="dropdown"
+                aria-expanded="false"
+                ><span class="nav-link-inner-text">02</span></a
+              >
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a href="./service.php#services" class="nav-link on"
+                    >Our Services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="./service.php#news" class="nav-link">What's On</a>
+                </li>
+				<li class="nav-item">
+                      <a href="./clevertalks" class="nav-link">Clevertalks</a>
+                    </li>
+                <li class="nav-item">
+                  <a href="./blog" class="nav-link">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="nav-link"
+                data-toggle="dropdown"
+                aria-expanded="true"
+                ><span class="nav-link-inner-text">03</span></a
+              >
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a href="./career.php#career" class="nav-link">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./career.php#contact" class="nav-link">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./career.php#enquire" class="nav-link">Enquire</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://clevertize.com/training/" class="nav-link">Training</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+		<div class="bigBox mobile-dev-service" style="margin-top:5rem;background: linear-gradient(180deg, #C22341 0%, #742453 100%);border-radius:20px;">
+		    <div class="h1-title-card">
+		        <h1 class="title" style="text-align:left!important;color:#fff;font-size:40px;">Our Services</h1>
+		    </div>
+		    
+
+            <div class="container">
+                <ul id="cards">
+                    <li class="card" id="card1">
+                        <div class="card-body">
+                            <h3>Brand Launch</h3>
+                            <ul class="active-list">
+                                <li class="actual-service">Integrated Campaign Planning & Execution</li>
+                                <li class="actual-service">Brand Strategy, Creative Strategy</li>
+                                <li class="actual-service">Original Script Writing & Execution</li>
+                                <li class="actual-service">Video Editing & Animation</li>
+                                <li class="actual-service">BTL Activation strategy</li>
+                                <li class="actual-service">Media Amplification</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="card" id="card2">
+                        <div class="card-body">
+                            <h3>Creative & Social Media</h3>
+                            <ul class="active-list">
+                                <li class="actual-service">Planning Marketing Calendar</li>
+                                <li class="actual-service">Ideation for the campaigns</li>
+                                <li class="actual-service">Social Media Management</li>
+                                <li class="actual-service">Original Content and Copywriting</li>
+                                <li class="actual-service">Graphic Design, Iconography and Illustrations</li>
+                                <li class="actual-service">Video Editing and Animation</li>
+                                <li class="actual-service">Print, OOH, Mainline Advertising</li>
+                                <li class="actual-service">Online Reputation Management</li>
+                                <li class="actual-service">Influencer Campaigns</li>
+                                <li class="actual-service">Home Shot Reel Production</li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="card" id="card3">
+                        <div class="card-body">
+                            <h3>Media Strategy</h3>
+                            <ul class="active-list">
+                                <li class="actual-service">Integrated Media Planning Including Mainline & Digital</li>
+                                <li class="actual-service">Media Buying for Top & Mid Funnel</li>
+                                <li class="actual-service">Performance</li>
+                                <li class="actual-service">MarTech Innovations</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="card" id="card4">
+                        <div class="card-body">
+                            <h3>Website & Automation</h3>
+                            <ul class="active-list">
+                                <li class="actual-service">Custom Build Website</li>
+                                <li class="actual-service">E-commerce Website</li>
+                                <li class="actual-service">UI/UX for Mobile Apps & Website</li>
+                                <li class="actual-service">Search Engine Optimization</li>
+                                <li class="actual-service">App Store Optimization</li>
+                                <li class="actual-service">Marketing Automation</li>
+                                <li class="actual-service">Email Automation</li>
+                                <li class="actual-service">Custom Build Chatbots</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="card" id="card5">
+                        <div class="card-body">
+                            <h3>Video & Infographics</h3>
+                            <ul class="active-list">
+                                <li class="actual-service">Technology & Niche Product/Service Companies</li>
+                                <li class="actual-service">Research of Products/Services including reports</li>
+                                <li class="actual-service">Scripting, Storyboarding, Animation</li>
+                                <li class="actual-service">Product/Services Videos</li>
+                                <li class="actual-service">Case Study Videos</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="card" id="card6">
+                        <div class="card-body">
+                            <h3>Clevertize Consulting</h3>
+                            <ul class="active-list">
+                                <li class="actual-service">Brand Strategy</li>
+                                <li class="actual-service">Creative</li>
+                                <li class="actual-service">Media</li>
+                                <li class="actual-service">Marketing Technology</li>
+                                <li class="actual-service">Operations</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+			<!-- <div class="container-box">
+				<div class="service-card-stack">
+					
+					
+					<ul class="service-card-list">
+						<li class="service-card service-6">
+												
+												
+												<div class="service-h3"><h3 class="service-card-list__text">Clevertize Consulting </h3></div>
+												<div class="list-of-sub-services">
+													<div class="listed-services-sub">
+														<p>Brand Strategy</p>
+														<p>Creative</p>
+														<p>Media</p>
+														<p>Marketing Technology</p>
+														<p>Operations</p>
+													</div>
+												</div>
+					
+											</li>
+						<li class="service-card service-5">
+							<div class="service-h3"><h3 class="service-card-list__text">Video & Infographics</h3></div>
+							<div class="list-of-sub-services">
+								<div class="listed-services-sub">
+									<p>Technology & Niche Product/Service Companies</p>
+									<p>Research of Products/Services including reports</p>
+									<p>Scripting, Storyboarding, Animation</p>
+									<p>Product/Services Videos, Case study Videos</p>
+									
+								</div>
+							</div>
+
+						</li>
+						<li class="service-card service-4">
+							<div class="service-h3"><h3 class="service-card-list__text">Website & Automation</h3></div>
+							<div class="list-of-sub-services">
+								<div class="listed-services-sub">
+								    <p>Custom Build Website</p>
+									<p>E-commerce Website</p>
+									<p>UI/UX for Mobile Apps & Website</p>
+									<p>Search Engine Optimization</p>
+									<p>App Store Optimization</p>
+									<p>Marketing Automation</p>
+									<p>Email Automation</p>
+									<p>Custom Build Chatbots</p>
+									
+								</div>
+							</div>
+
+						</li>
+						<li class="service-card service-3">
+							<div class="service-h3"><h3 class="service-card-list__text">Media Strategy </h3></div>
+							<div class="list-of-sub-services">
+								<div class="listed-services-sub">
+									<p>Integrated Media Planning Including Mainline & Digital</p>
+									<p>Media Buying for Top & Mid Funnel</p>
+									<p>Performance</p>
+									<p>MarTech Innovations</p>
+									
+								</div>
+							</div>
+
+						</li>					
+						
+								<li class="service-card service-2">
+									<div class="service-h3"><h3 class="service-card-list__text">Creative & Social Media </h3></div>
+									<div class="list-of-sub-services">
+										<div class="listed-services-sub">
+											<p>Planning Marketing Calendar </p>
+											<p>Ideation for the campaigns</p>
+											<p>Social Media Management</p>
+											<p>Original Content and Copywriting</p>
+											<p>Graphic Design, Iconography and Illustrations</p>
+											<p>Video Editing and Animation</p>
+											<p>Print, OOH, Mainline Advertising</p>
+											<p>Online Reputation Management</p>
+											<p>Influencer Campaigns</p>
+											<p>Influencer Campaigns</p>
+											<p>Home Shot Reel Production</p>
+										</div>
+									</div>
+		
+						</li>
+						<li class="service-card service-1">
+
+							<div class="service-h3"><h3 class="service-card-list__text">	Brand (Product/Service) Launch </h3></div>
+							<div class="list-of-sub-services">
+								<div class="listed-services-sub">
+									<p>Integrated Campaign Planning & Execution</p>
+									<p>Brand Strategy, Creative Strategy</p>
+									<p>Original Script Writing & Execution</p>
+									<p>Video Editing & Animation</p>
+									<p>BTL Activation strategy</p>
+									<p>Media Amplification</p>
+								</div>
+							</div>
+
+						</li>
+
+						
+				</ul>	
+				<div class="slide-btn-bottom">
+					<span class="slider-btns prev"><i class="fas fa-chevron-left"></i></span>
+				<span class="slider-btns next"><i class="fas fa-chevron-right"></i></span>
+				</div>
+			</div>
+			</div> -->
+		</div>
+	
+<!-- partial -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script async defer src="https://clevertize.com/assets/js/main.js"></script>
+  
+</body>
+</html>

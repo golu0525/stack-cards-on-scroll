@@ -279,7 +279,7 @@ p, a, span {
     </main>
     <header>
       <div class="header-section">
-        <a href="./"><img src="https://clevertize.com/assets/images/logo.png" alt="Clevertize Logo" /></a>
+        
         <div id="menu" class="menu">
           <a href="javascript:void(0)" aria-label="Menu" onclick="slideMenu()"  class="menu-btn">
             <i class="fas fa-bars"></i>
@@ -296,17 +296,7 @@ p, a, span {
                 aria-expanded="false"
                 ><span class="nav-link-inner-text">01</span></a
               >
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a href="https://clevertize.com/" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://clevertize.com/work/" class="nav-link">Our Work</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./#our_client" class="nav-link">Our Clients</a>
-                </li>
-              </ul>
+              
             </li>
             <li class="dropdown show">
               <a
@@ -316,22 +306,7 @@ p, a, span {
                 aria-expanded="false"
                 ><span class="nav-link-inner-text">02</span></a
               >
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a href="./service.php#services" class="nav-link on"
-                    >Our Services</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="./service.php#news" class="nav-link">What's On</a>
-                </li>
-				<li class="nav-item">
-                      <a href="./clevertalks" class="nav-link">Clevertalks</a>
-                    </li>
-                <li class="nav-item">
-                  <a href="./blog" class="nav-link">Blog</a>
-                </li>
-              </ul>
+              
             </li>
             <li class="dropdown">
               <a
@@ -341,20 +316,7 @@ p, a, span {
                 aria-expanded="true"
                 ><span class="nav-link-inner-text">03</span></a
               >
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a href="./career.php#career" class="nav-link">Careers</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./career.php#contact" class="nav-link">Contact us</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./career.php#enquire" class="nav-link">Enquire</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://clevertize.com/training/" class="nav-link">Training</a>
-                </li>
-              </ul>
+              
             </li>
           </ul>
         </nav>

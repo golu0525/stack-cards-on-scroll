@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services </title>
+  <title>Services</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600|Staatliches&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://clevertize.com/assets/css/optimized.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -53,6 +53,7 @@ p, a, span {
         --cards: 6;
         --cardHeight: 80vh;
         --cardTopPadding: 3.5em;
+        --dcardTopPadding: 3em;
         --cardMargin: 4vw;
     }
     
@@ -69,6 +70,16 @@ p, a, span {
         grid-template-rows: repeat(var(--cards), var(--cardHeight));
         gap: var(--cardMargin);
         padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+        margin-bottom: var(--cardMargin);
+    }
+    #dcards {
+        list-style: none;
+        padding-left: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(var(--cards), var(--cardHeight));
+        gap: var(--cardMargin);
+        padding-bottom: calc(var(--cards) * var(--dcardTopPadding));
         margin-bottom: var(--cardMargin);
     }
     
@@ -95,6 +106,11 @@ p, a, span {
         position: sticky;
         top: 0;
         padding-top: calc(var(--index) * var(--cardTopPadding));
+    }
+    .card.desktop-card {
+        position: sticky;
+        top: 0;
+        padding-top: calc(var(--index) * var(--dcardTopPadding));
     }
     
     #card1 .card-body {
@@ -138,6 +154,29 @@ p, a, span {
         position: relative;
     }
     
+    .desktop-card-body {
+        box-sizing: border-box;
+        padding: 0 30px 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        height: var(--cardHeight);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        transition: all 0.5s;
+        height: 65vh;
+        background-color: #fff;
+        /*background-image: url('https://clevertize.com/assets/images/serv-1.jpg');*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: center center;*/
+        /*background-size: cover;*/
+        position: relative;
+        width: 100%;
+    }
+    .bigBox.mobile-dev-service {
+        display: none;
+    }
+    
     .active-list {
         padding: 0 0 0 10px;
         border-left: 3px solid #c32340;
@@ -163,6 +202,9 @@ p, a, span {
         text-align: left !important;
         font-size: 28px;
     }
+    .content-desk-top img {
+    width: 250px;
+}
     /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -182,7 +224,22 @@ p, a, span {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-    @media screen and (max-width: 767px) {
+.content-desk-top img {
+    margin: 1rem 0;
+}
+
+    @media screen and (max-width: 1023px) {
+        .bigBox.mobile-dev-service {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            flex-direction: column;
+            align-content: center;
+            height: auto;
+            background: red;
+    }
         .container {
         width: 90%;
         margin: 0 auto;
@@ -205,6 +262,9 @@ p, a, span {
     }
     #card6 .card-body {
         background-image: url('https://clevertize.com/assets/images/clevertize-consulting-services.jpg');
+    }
+    .bigBox.desktop-dev-service {
+        display: none;
     }
     }
     </style>
@@ -300,6 +360,140 @@ p, a, span {
         </nav>
       </div>
     </header>
+    <div class="bigBox desktop-dev-service" style="margin-top:5rem;background: linear-gradient(180deg, #C22341 0%, #742453 100%);border-radius:20px;">
+		    <div class="h1-title-card">
+		        <h1 class="title" style="text-align:left!important;color:#fff;font-size:40px;">Our Services</h1>
+		    </div>
+		    
+
+            <div class="container">
+                <ul id="dcards">
+                    <li class="card desktop-card" id="card1">
+                        <div class="desktop-card-body">
+                            <div class="content-desk-top">
+                                <h3>Brand Launch</h3>
+                                <ul class="active-list">
+                                    <li class="actual-service">Integrated Campaign Planning & Execution</li>
+                                    <li class="actual-service">Brand Strategy, Creative Strategy</li>
+                                    <li class="actual-service">Original Script Writing & Execution</li>
+                                    <li class="actual-service">Video Editing & Animation</li>
+                                    <li class="actual-service">BTL Activation strategy</li>
+                                    <li class="actual-service">Media Amplification</li>
+                                </ul>
+                            </div>
+                            <div class="content-desk-top">
+                                <img src="https://clevertize.com/assets/images/desktop-brand-launch-1.jpg" alt="brand launch" />
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="card desktop-card" id="card2">
+                        <div class="desktop-card-body">
+                            <div class="content-desk-top">
+                                <h3>Creative & Social Media</h3>
+                                <ul class="active-list">
+                                    <li class="actual-service">Planning Marketing Calendar</li>
+                                <li class="actual-service">Ideation for the campaigns</li>
+                                <li class="actual-service">Social Media Management</li>
+                                <li class="actual-service">Original Content and Copywriting</li>
+                                <li class="actual-service">Graphic Design, Iconography and Illustrations</li>
+                                <li class="actual-service">Video Editing and Animation</li>
+                                <li class="actual-service">Print, OOH, Mainline Advertising</li>
+                                <li class="actual-service">Online Reputation Management</li>
+                                <li class="actual-service">Influencer Campaigns</li>
+                                <li class="actual-service">Home Shot Reel Production</li>
+                                </ul>
+                            </div>
+                            <div class="content-desk-top">
+                                <img src="https://clevertize.com/assets/images/desktop-creative-and-social-media-1.jpg" alt="brand launch" />
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                    <li class="card desktop-card" id="card3">
+                        
+                        <div class="desktop-card-body">
+                            <div class="content-desk-top">
+                                <h3>Media Strategy</h3>
+                                <ul class="active-list">
+                                <li class="actual-service">Integrated Media Planning Including Mainline & Digital</li>
+                                <li class="actual-service">Media Buying for Top & Mid Funnel</li>
+                                <li class="actual-service">Performance</li>
+                                <li class="actual-service">MarTech Innovations</li>
+                            </ul>
+                            </div>
+                            <div class="content-desk-top">
+                                <img src="https://clevertize.com/assets/images/desktop-media-strategy-1.jpg" alt="brand launch" />
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="card desktop-card" id="card4">
+                        <div class="desktop-card-body">
+                            <div class="content-desk-top">
+                                <h3>Website & Automation</h3>
+                                <ul class="active-list">
+                                    <li class="actual-service">Custom Build Website</li>
+                                <li class="actual-service">E-commerce Website</li>
+                                <li class="actual-service">UI/UX for Mobile Apps & Website</li>
+                                <li class="actual-service">Search Engine Optimization</li>
+                                <li class="actual-service">App Store Optimization</li>
+                                <li class="actual-service">Marketing Automation</li>
+                                <li class="actual-service">Email Automation</li>
+                                <li class="actual-service">Custom Build Chatbots</li>
+                                </ul>
+                            </div>
+                            <div class="content-desk-top">
+                                <img src="https://clevertize.com/assets/images/desktop-website-and-automation-1.jpg" alt="brand launch" />
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="card desktop-card" id="card5">
+                        
+                        <div class="desktop-card-body">
+                            <div class="content-desk-top">
+                                <h3>Video & Infographics</h3>
+                                <ul class="active-list">
+                                    <li class="actual-service">Technology & Niche Product/Service Companies</li>
+                                <li class="actual-service">Research of Products/Services including reports</li>
+                                <li class="actual-service">Scripting, Storyboarding, Animation</li>
+                                <li class="actual-service">Product/Services Videos</li>
+                                <li class="actual-service">Case Study Videos</li>
+                                </ul>
+                            </div>
+                            <div class="content-desk-top">
+                                <img src="https://clevertize.com/assets/images/desktop-video-infographics-1.jpg" alt="brand launch" />
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="card desktop-card" id="card6">
+                        
+                        <div class="desktop-card-body">
+                            <div class="content-desk-top">
+                                <h3>Clevertize Consulting</h3>
+                                <ul class="active-list">
+                                    <li class="actual-service">Brand Strategy</li>
+                                    <li class="actual-service">Creative</li>
+                                    <li class="actual-service">Media</li>
+                                    <li class="actual-service">Marketing Technology</li>
+                                    <li class="actual-service">Operations</li>
+                                </ul>
+                            </div>
+                            <div class="content-desk-top">
+                                <img src="https://clevertize.com/assets/images/Clevertize-consulting-desktop-1.jpg" alt="brand launch" />
+                            </div>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+			
+		</div>
+	
 		<div class="bigBox mobile-dev-service" style="margin-top:5rem;background: linear-gradient(180deg, #C22341 0%, #742453 100%);border-radius:20px;">
 		    <div class="h1-title-card">
 		        <h1 class="title" style="text-align:left!important;color:#fff;font-size:40px;">Our Services</h1>
@@ -501,10 +695,11 @@ p, a, span {
 			</div> -->
 		</div>
 	
-<!-- partial -->
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
   <script async defer src="https://clevertize.com/assets/js/main.js"></script>
   
+
 </body>
 </html>

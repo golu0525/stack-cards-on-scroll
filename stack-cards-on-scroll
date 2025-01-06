@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600|Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600|Staatliches&display=swap">
   <link rel="stylesheet" href="https://clevertize.com/assets/css/optimized.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
@@ -165,11 +165,11 @@ p, a, span {
         align-items: flex-start;
         transition: all 0.5s;
         height: 65vh;
-        background-color: #fff;
-        /*background-image: url('https://clevertize.com/assets/images/serv-1.jpg');*/
-        /*background-repeat: no-repeat;*/
-        /*background-position: center center;*/
-        /*background-size: cover;*/
+        /*background-color: #fff;*/
+        background-image: url('https://clevertize.com/assets/images/serv-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
         position: relative;
         width: 100%;
     }
@@ -228,6 +228,27 @@ p, a, span {
     margin: 1rem 0;
 }
 
+/*desktopbackground images for cards */
+.card1 .desktop-card-body {
+    background-image: url('https://clevertize.com/assets/images/brand-launch-service-d.jpg');
+    }
+    .card2 .desktop-card-body {
+        background-image: url('https://clevertize.com/assets/images/creative-and-social-media-desktop1.jpg');
+    }
+    .card3 .desktop-card-body {
+        background-image: url('https://clevertize.com/assets/images/media-strategy-desktop-v1.jpg');
+    }
+    .card4 .desktop-card-body {
+        background-image: url('https://clevertize.com/assets/images/website-seo-automation-desktop-v1.jpg');
+    }
+    .card5 .desktop-card-body {
+        background-image: url('https://clevertize.com/assets/images/video-infographic-desktop-v1.jpg');
+    }
+    .card6 .desktop-card-body {
+        background-image: url('https://clevertize.com/assets/images/clevertize-consulting-desktop-v1.jpg');
+    }
+
+
     @media screen and (max-width: 1023px) {
         .bigBox.mobile-dev-service {
             width: 100%;
@@ -279,7 +300,7 @@ p, a, span {
     </main>
     <header>
       <div class="header-section">
-        
+        <a href="./"><img src="https://clevertize.com/assets/images/logo.png" alt="Clevertize Logo" /></a>
         <div id="menu" class="menu">
           <a href="javascript:void(0)" aria-label="Menu" onclick="slideMenu()"  class="menu-btn">
             <i class="fas fa-bars"></i>
@@ -296,7 +317,17 @@ p, a, span {
                 aria-expanded="false"
                 ><span class="nav-link-inner-text">01</span></a
               >
-              
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a href="https://clevertize.com/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://clevertize.com/work/" class="nav-link">Our Work</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./#our_client" class="nav-link">Our Clients</a>
+                </li>
+              </ul>
             </li>
             <li class="dropdown show">
               <a
@@ -306,7 +337,22 @@ p, a, span {
                 aria-expanded="false"
                 ><span class="nav-link-inner-text">02</span></a
               >
-              
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a href="./service.php#services" class="nav-link on"
+                    >Our Services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="./service.php#news" class="nav-link">What's On</a>
+                </li>
+				<li class="nav-item">
+                      <a href="./clevertalks" class="nav-link">Clevertalks</a>
+                    </li>
+                <li class="nav-item">
+                  <a href="./blog" class="nav-link">Blog</a>
+                </li>
+              </ul>
             </li>
             <li class="dropdown">
               <a
@@ -316,7 +362,20 @@ p, a, span {
                 aria-expanded="true"
                 ><span class="nav-link-inner-text">03</span></a
               >
-              
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a href="./career.php#career" class="nav-link">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./career.php#contact" class="nav-link">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./career.php#enquire" class="nav-link">Enquire</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://clevertize.com/training/" class="nav-link">Training</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -330,7 +389,7 @@ p, a, span {
 
             <div class="container">
                 <ul id="dcards">
-                    <li class="card desktop-card" id="card1">
+                    <li class="card desktop-card card1" id="card1">
                         <div class="desktop-card-body">
                             <div class="content-desk-top">
                                 <h3>Brand Launch</h3>
@@ -344,12 +403,12 @@ p, a, span {
                                 </ul>
                             </div>
                             <div class="content-desk-top">
-                                <img src="https://clevertize.com/assets/images/desktop-brand-launch-1.jpg" alt="brand launch" />
+                                <!--<img src="https://clevertize.com/assets/images/desktop-brand-launch-1.jpg" alt="brand launch" />-->
                             </div>
                             
                         </div>
                     </li>
-                    <li class="card desktop-card" id="card2">
+                    <li class="card desktop-card card2" id="card2">
                         <div class="desktop-card-body">
                             <div class="content-desk-top">
                                 <h3>Creative & Social Media</h3>
@@ -367,13 +426,13 @@ p, a, span {
                                 </ul>
                             </div>
                             <div class="content-desk-top">
-                                <img src="https://clevertize.com/assets/images/desktop-creative-and-social-media-1.jpg" alt="brand launch" />
+                                <!--<img src="https://clevertize.com/assets/images/desktop-creative-and-social-media-1.jpg" alt="brand launch" />-->
                             </div>
                             
                         </div>
                         
                     </li>
-                    <li class="card desktop-card" id="card3">
+                    <li class="card desktop-card card3" id="card3">
                         
                         <div class="desktop-card-body">
                             <div class="content-desk-top">
@@ -386,12 +445,12 @@ p, a, span {
                             </ul>
                             </div>
                             <div class="content-desk-top">
-                                <img src="https://clevertize.com/assets/images/desktop-media-strategy-1.jpg" alt="brand launch" />
+                                <!--<img src="https://clevertize.com/assets/images/desktop-media-strategy-1.jpg" alt="brand launch" />-->
                             </div>
                             
                         </div>
                     </li>
-                    <li class="card desktop-card" id="card4">
+                    <li class="card desktop-card card4" id="card4">
                         <div class="desktop-card-body">
                             <div class="content-desk-top">
                                 <h3>Website & Automation</h3>
@@ -407,12 +466,12 @@ p, a, span {
                                 </ul>
                             </div>
                             <div class="content-desk-top">
-                                <img src="https://clevertize.com/assets/images/desktop-website-and-automation-1.jpg" alt="brand launch" />
+                                <!--<img src="https://clevertize.com/assets/images/desktop-website-and-automation-1.jpg" alt="brand launch" />-->
                             </div>
                             
                         </div>
                     </li>
-                    <li class="card desktop-card" id="card5">
+                    <li class="card desktop-card card5" id="card5">
                         
                         <div class="desktop-card-body">
                             <div class="content-desk-top">
@@ -426,12 +485,12 @@ p, a, span {
                                 </ul>
                             </div>
                             <div class="content-desk-top">
-                                <img src="https://clevertize.com/assets/images/desktop-video-infographics-1.jpg" alt="brand launch" />
+                                <!--<img src="https://clevertize.com/assets/images/desktop-video-infographics-1.jpg" alt="brand launch" />-->
                             </div>
                             
                         </div>
                     </li>
-                    <li class="card desktop-card" id="card6">
+                    <li class="card desktop-card card6" id="card6">
                         
                         <div class="desktop-card-body">
                             <div class="content-desk-top">
@@ -445,7 +504,7 @@ p, a, span {
                                 </ul>
                             </div>
                             <div class="content-desk-top">
-                                <img src="https://clevertize.com/assets/images/Clevertize-consulting-desktop-1.jpg" alt="brand launch" />
+                                <!--<img src="https://clevertize.com/assets/images/Clevertize-consulting-desktop-1.jpg" alt="brand launch" />-->
                             </div>
                             
                         </div>
@@ -658,8 +717,7 @@ p, a, span {
 		</div>
 	
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script async defer src="https://clevertize.com/assets/js/main.js"></script>
   
 
